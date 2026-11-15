@@ -8,4 +8,4 @@ GitHub Pages 设置：Settings → Pages → Source 选择 Deploy from a branch 
 
 本仓库只包含公开静态资源；不包含后端、账号凭据、服务器配置或用户数据库。项目路径和根路径均使用相对资源地址。
 
-首页与 MD 图标使用 Nunito 900 字体，字体许可证见 nunito-OFL.txt。
+正文使用随站点提供的 Noto Sans SC 可变字体，手机和电脑使用相同字形与字重；首页与 MD 图标使用 Nunito 900 字体。字体来源和许可证见 FONT-SOURCES.txt、noto-sans-sc-OFL.txt、nunito-OFL.txt。

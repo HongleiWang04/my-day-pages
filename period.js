@@ -1,7 +1,6 @@
-import {addDays,dayKey,daysBetween,monthDays,pad,parseDay,uid} from './core.js?v=20261115-pages-1';
+import {addDays,dayKey,daysBetween,monthDays,pad,parseDay,uid} from './core.js?v=20261115-pages-2';
 
 const LEVELS={flow:['少量','中等','大量'],pain:['轻微','中度','严重']};
-const NONE=new Set(['','无','未记录',null,undefined]);
 const isDate=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&dayKey(parseDay(value))===value;
 const sortedCycles=period=>[...(period.cycles||[])].filter(c=>isDate(c.start)).sort((a,b)=>a.start.localeCompare(b.start));
 const settings=period=>({length:Math.max(1,Math.trunc(Number(period.settings?.length)||5)),cycle:Math.max(1,Math.trunc(Number(period.settings?.cycle)||28))});
@@ -32,7 +31,7 @@ export function dayMarks(day,key){
 
 export function hasDayRecord(day){
  if(!day||typeof day!=='object')return false;
- return dayMarks(day,'flow').length>0||dayMarks(day,'pain').length>0||!NONE.has(day.sex)||
+ return dayMarks(day,'flow').length>0||dayMarks(day,'pain').length>0||
   (Array.isArray(day.symptoms)&&day.symptoms.length>0)||Boolean(typeof day.note==='string'&&day.note.trim());
 }
 
@@ -141,7 +140,7 @@ export function setDayLevel(period,date,key,value){
  const level=Number.isInteger(value)?value:levels.indexOf(value)+1;
  if(level<1||level>3)throw Error('请选择有效档位');
  period.days||={};
- const day=period.days[date]||{flow:'无',pain:'无',sex:'无',symptoms:[],note:''};
+ const day=period.days[date]||{flow:'无',pain:'无',symptoms:[],note:''};
  const current=dayMarks(day,key).at(-1)||0;
  const marks=current===level?[]:Array.from({length:level},(_,i)=>i+1);
  day[key+'Marks']=marks;day[key]=marks.length?levels[marks.at(-1)-1]:'无';

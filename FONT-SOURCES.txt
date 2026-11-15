@@ -1,0 +1,7 @@
+Noto Sans SC Variable 5.3.1, weights 100–900
+https://fontsource.org/fonts/noto-sans-sc
+https://github.com/notofonts/noto-cjk
+Packaged from @fontsource-variable/noto-sans-sc@5.3.1; font outlines unchanged.
+License: SIL Open Font License 1.1, see noto-sans-sc-OFL.txt.
+Self-hosted WOFF2 unicode subsets support all website text and user-entered Chinese.
+Nunito 900 remains the MY DAY title/logo font; see nunito-OFL.txt.
