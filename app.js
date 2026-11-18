@@ -1,14 +1,14 @@
-import {createAIRecorder} from './ai-record.js?v=20261118-ai-record-1';
-import {pad,dayKey,parseDay,addDays,daysBetween,weekStart,monthDays,rangeFor,recordsIn,stats,countdownDate,countdownDays,sortCountdowns,uid,seedData,emptyData,validateData} from './core.js?v=20261118-ai-record-1';
-import {installHomeGestures} from './gestures.js?v=20261118-ai-record-1';
-import {installGroupGestures} from './group-gestures.js?v=20261118-ai-record-1';
-import {createCamera} from './camera.js?v=20261118-ai-record-1';
-import {createAccountUI} from './local-data.js?v=20261118-ai-record-1';
-import {iconCategories} from './icon-library.js?v=20261118-ai-record-1';
+import {createAIRecorder} from './ai-record.js?v=20261118-ai-public-1';
+import {pad,dayKey,parseDay,addDays,daysBetween,weekStart,monthDays,rangeFor,recordsIn,stats,countdownDate,countdownDays,sortCountdowns,uid,seedData,emptyData,validateData} from './core.js?v=20261118-ai-public-1';
+import {installHomeGestures} from './gestures.js?v=20261118-ai-public-1';
+import {installGroupGestures} from './group-gestures.js?v=20261118-ai-public-1';
+import {createCamera} from './camera.js?v=20261118-ai-public-1';
+import {createAccountUI} from './local-data.js?v=20261118-ai-public-1';
+import {iconCategories} from './icon-library.js?v=20261118-ai-public-1';
 
-import {bindSearchGestures} from './search-gestures.js?v=20261118-ai-record-1';
-import {bindCountdownCards} from './countdown-gestures.js?v=20261118-ai-record-1';
-import {dayInfo,historyItems,summaryStats,startPeriod,endPeriod,cancelPeriodCycle,undoPeriodEnd,setDayLevel,hasDayRecord} from './period.js?v=20261118-ai-record-1';
+import {bindSearchGestures} from './search-gestures.js?v=20261118-ai-public-1';
+import {bindCountdownCards} from './countdown-gestures.js?v=20261118-ai-public-1';
+import {dayInfo,historyItems,summaryStats,startPeriod,endPeriod,cancelPeriodCycle,undoPeriodEnd,setDayLevel,hasDayRecord} from './period.js?v=20261118-ai-public-1';
 
 const $=(s,root=document)=>root.querySelector(s),$$=(s,root=document)=>[...root.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

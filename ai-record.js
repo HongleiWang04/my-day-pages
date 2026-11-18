@@ -1,4 +1,4 @@
-import {AI_TEXT_LIMIT, eventCatalog, normalizeDraft} from './ai-record-core.js?v=20261118-ai-record-1';
+import {AI_TEXT_LIMIT, eventCatalog, normalizeDraft} from './ai-record-core.js?v=20261118-ai-public-1';
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 export function createAIRecorder({sheet, showSheet, getEvents, getDate, openRecord}) {
