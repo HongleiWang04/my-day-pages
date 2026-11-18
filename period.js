@@ -1,4 +1,4 @@
-import {addDays,dayKey,daysBetween,monthDays,pad,parseDay,uid} from './core.js?v=20261115-pages-2';
+import {addDays,dayKey,daysBetween,monthDays,pad,parseDay,uid} from './core.js?v=20261118-ai-record-1';
 
 const LEVELS={flow:['少量','中等','大量'],pain:['轻微','中度','严重']};
 const isDate=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&dayKey(parseDay(value))===value;

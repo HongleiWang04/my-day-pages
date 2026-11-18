@@ -6,6 +6,8 @@
 
 GitHub Pages 设置：Settings → Pages → Source 选择 Deploy from a branch → main → /(root) → Save。保持 Enforce HTTPS 开启，发布成功后以 Pages 页面实际显示的网址为准。
 
+一句话记录的AI解析需要单独配置服务端接口；未配置时显示待开通，并支持带入原文手动记录。模型密钥不能放入本仓库。
+
 本仓库只包含公开静态资源；不包含后端、账号凭据、服务器配置或用户数据库。项目路径和根路径均使用相对资源地址。
 
 正文使用随站点提供的 Noto Sans SC 可变字体，手机和电脑使用相同字形与字重；首页与 MD 图标使用 Nunito 900 字体。字体来源和许可证见 FONT-SOURCES.txt、noto-sans-sc-OFL.txt、nunito-OFL.txt。
